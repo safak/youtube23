@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #013914;
+  color: white;
+  transition: 0.5s all ease;
+  position: static;
+  top: 0;
+  z-index: 999;
+
+  &.active{
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px 0px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+
+      .text {
+
+      }
+
+      .dot {
+        color: #1dbf73;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-weight: 500;
+
+      .user{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        position: relative;
+
+        img{
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .options{
+          position: absolute;
+
+          right: 0;
+          top:50px;
+          padding: 20px;
+          background-color: white;
+          display: flex;
+          border-radius: 10px;
+          border: 2px solid lightgray;
+          flex-direction: column;
+          gap: 10px;
+          color: gray;
+          width: 200px;
+          font-weight: 300;
+        }
+      }
+
+      button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        background-color: transparent;
+        &:hover{
+          background-color: #1dbf73;
+          border-color: #1dbf73;
+        }
+      }
+    }
+
+  }
+  hr{
+    width: 100%;
+    height: 0px;
+    border: 0.5px solid lightgray;
+  }
+  .menu{
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: gray;
+  }
+}
