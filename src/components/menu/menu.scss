@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.menu {
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 12px;
+      font-weight: 200;
+      color: $soft-color;
+      text-transform: uppercase;
+
+      @include lg{
+        display: none;
+      }
+    }
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $soft-bg;
+      }
+
+      .listItemTitle{
+        @include lg{
+          display: none;
+        }
+      }
+    }
+  }
+}
