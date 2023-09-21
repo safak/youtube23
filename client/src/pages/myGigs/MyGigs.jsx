@@ -13,7 +13,7 @@ function MyGigs() {
   const { isLoading, error, data } = useQuery({
     queryKey: ["myGigs"],
     queryFn: () =>
-      newRequest.get(`/gigs?userId=${currentUser.id}`).then((res) => {
+      newRequest.get(`/gigs?userId=${currentUser._id}`).then((res) => {
         return res.data;
       }),
   });
@@ -48,6 +48,7 @@ function MyGigs() {
             )}
           </div>
           <table>
+            <tbody>
             <tr>
               <th>Image</th>
               <th>Title</th>
@@ -73,6 +74,7 @@ function MyGigs() {
                 </td>
               </tr>
             ))}
+              </tbody>
           </table>
         </div>
       )}
