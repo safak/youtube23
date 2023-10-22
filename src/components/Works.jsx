@@ -5,11 +5,11 @@ import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 
 const data = [
-  "Web Design",
-  "Development",
-  "Illustration",
-  "Product Design",
-  "Social Media",
+  "Creativiadad",
+  "Originalidad",
+  "Desarrollo",
+  "Ingenio",
+  "Intuitividad",
 ];
 
 const Section = styled.div`

@@ -93,16 +93,15 @@ const Who = () => {
           </Canvas>
         </Left>
         <Right>
-          <Title>Think outside the square space</Title>
+          <Title>Seminario, ingeniería de software 2023</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>Esta es la página del seminario desarrollada por estudiantes de ingeniería de software.</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
+           Una página bastante creativa e intuitiva.
           </Desc>
-          <Button>See our works</Button>
+          <Button>Ingresar</Button>
         </Right>
       </Container>
     </Section>

@@ -126,13 +126,13 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
-          <Title>Think. Make. Solve.</Title>
+        <Title>Seminario</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>¿De qué se trata?</Subtitle>
           </WhatWeDo>
           <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
+            Es  una reunión especializada que tiene naturaleza técnica y académica.
           </Desc>
           <Button>Learn More</Button>
         </Left>
@@ -152,7 +152,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./img/moon.png" />
+          <Img src="./img/moon.png"/>
         </Right>
       </Container>
     </Section>
