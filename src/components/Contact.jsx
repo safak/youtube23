@@ -103,15 +103,15 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
-            <Input placeholder="Name" name="name" />
-            <Input placeholder="Email" name="email" />
+            <Title>Contactanos</Title>
+            <Input placeholder="Nombre" name="name" />
+            <Input placeholder="Correo" name="email" />
             <TextArea
-              placeholder="Write your message"
-              name="message"
+              placeholder="Escribe tu mensaje"
+              name="Mnesaje"
               rows={10}
             />
-            <Button type="submit">Send</Button>
+            <Button type="submit">Enviar</Button>
             {success &&
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>

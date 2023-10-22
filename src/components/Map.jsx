@@ -8,22 +8,18 @@ import {
 } from "react-simple-maps";
 
 const Map = () => {
+  const ubicacionDeseada = [1.2295203251192612, -77.28999038843449]; // Coordenadas de Pasto, Nariño
+
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [-10.0, -52.0, 0],
-        center: [-5, -3],
-        scale: 1600
+        center: ubicacionDeseada, // Coordenadas de Pasto, Nariño
+        scale: 200, // Ajusta el nivel de zoom según tus necesidades
       }}
-      style={{width:"100%", height:"100%"}}
+      style={{ width: "100%", height: "100%" }}
     >
-      <Geographies
-        geography="/features.json"
-        fill="#2C065D"
-        stroke="#FFFFFF"
-        strokeWidth={0.5}
-      >
+      <Geographies geography="/features.json" fill="#2C065D" stroke="#FFFFFF" strokeWidth={0.5}>
         {({ geographies }) =>
           geographies.map((geo) => (
             <Geography key={geo.rsmKey} geography={geo} />
@@ -31,31 +27,17 @@ const Map = () => {
         }
       </Geographies>
       <Annotation
-        subject={[2.3522, 48.8566]}
-        dx={-90}
-        dy={-30}
+        subject={ubicacionDeseada}
+        dx={-250}
+        dy={-260}
         connectorProps={{
           stroke: "white",
-          strokeWidth: 2,
-          strokeLinecap: "round"
+          strokeWidth: 1,
+          strokeLinecap: "round",
         }}
       >
         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Paris"}
-        </text>
-      </Annotation>
-      <Annotation
-        subject={[21.01178, 52.22977]}
-        dx={-90}
-        dy={-30}
-        connectorProps={{
-          stroke: "white",
-          strokeWidth: 2,
-          strokeLinecap: "round"
-        }}
-      >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Warsaw"}
+          {"Pasto, Nariño"}
         </text>
       </Annotation>
     </ComposableMap>

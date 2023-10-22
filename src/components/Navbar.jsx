@@ -30,7 +30,8 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 50px;
+  height: 100px;
+  margin-top: 10px;
 `;
 
 const List = styled.ul`
@@ -75,16 +76,16 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
-            <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
-            <ListItem>Works</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem>Inicio</ListItem>
+            <ListItem>Estudio</ListItem>
+            <ListItem>Trabajos</ListItem>
+            <ListItem>Contacto</ListItem>
           </List>
         </Links>
         <Icons>
           {/* Changed the image due to copyright problems */}
           <Icon src="./img/search.png" />
-          <Button>Hire Now</Button>
+          <Button>Descubrir</Button>
         </Icons>
       </Container>
     </Section>

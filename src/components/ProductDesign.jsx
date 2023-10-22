@@ -35,8 +35,7 @@ const ProductDesign = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Desarrollado por estudiantes de ingeniería de software de la Universidad Coopertaiva.
       </Desc>
     </>
   );
